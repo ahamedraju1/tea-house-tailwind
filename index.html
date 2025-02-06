@@ -8,6 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+      
+.manrope-font {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
     <!-- font-awesome-cdn -->
     <script src="https://kit.fontawesome.com/b2f634418a.js" crossorigin="anonymous"></script>
     <!-- tailwind -cdn -->
@@ -26,14 +35,36 @@
 
 </head>
 
-<body>
-    <header>
-        <h1>It's good tea time at The Tea House</h1>
-        <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-        <button>Explore More</button>
-    </header>
-    <main>
-
+<body class="manrope-font">
+    <!-- main content -->
+    <main class="max-w-screen-xl mx-auto px-14 lg:px-28">
+       <!-- header section -->
+            <header class="pt-16 mb-20">
+            <div class="flex items-center gap-6">
+                <div class="w-155 h-120 space-y-5">
+                    <h1 class="h-120 text-5xl md:text-7xl font-extrabold text-[#1C1C1C]">It's good <br>tea time at The Tea House</h1>
+                    <p class="text-lg font-medium text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="bg-gradient-to-r from-orange-400 to-red-600 text-white px-5 py-4 rounded-xl font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
+                </div>
+                <!-- image section -->
+                <div class=" relative">
+                <div>
+                    <img class="w-full" src="images/banner.png" alt="">
+                </div>
+                     <!-- card container--> 
+                      <div class="flex absolute bg-white shadow-lg px-2 py-4 md:px-10 lg:px-4 rounded-lg  items-center top-28 md:top-56 md:left-28 lg:left-28"> 
+                        <!-- icon -->
+                        <div class="text-amber-500 text-lg"><i class="fa-solid fa-star"></i></div>
+                        <!-- Text -->
+                        <div class="ml-2">
+                          <h3 class="text-xl lg:text-2xl font-bold">5.00</h3>
+                          <p class="text-gray-500 font-semibold">Trust pilot ratings</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+           
+            </header>       
     </main>
     <footer>
 
